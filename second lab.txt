@@ -1,0 +1,103 @@
+1).
+package Srimanth;
+
+public class Calculator {
+	int add(int a,int b) {
+		System.out.println("Add two int numbers:");
+		return(a+b);
+	}
+	int add(int a,int b,int c) {
+		System.out.println("Add three int numbers:");
+		return(a+b+c);
+	}
+	double add(double a,double b) {
+		System.out.println("Add two double numbers:");
+		return(a+b);
+	}
+   	public static void main(String[] args) {
+   Calculator kk=new Calculator();
+   System.out.println(kk.add(5, 10));
+   System.out.println(kk.add(5, 10, 12));
+   System.out.println(kk.add(25.62, 25.96));
+
+	}
+
+}
+Output:
+Add two int numbers:
+15
+Add two double numbers:
+27
+Add two double numbers:
+51.58
+
+
+2).
+
+package srimanth;
+
+public class Student {
+
+
+			
+					
+					//private properties
+						private String name;
+						private int age;
+						private String department;
+						
+						//no-argument constructor
+						public Student() {
+							
+						}
+						
+						//parameterised constructor
+						public Student(String name, int age, String department) {
+							this.name=name;
+							this.age=age;
+							this.department=department;
+						}
+						
+						//getter and setter for name
+						public String getName() {
+							return name;
+						}
+						
+						public void setName(String name) {
+							this.name=name;
+						}
+						
+						//getter and setter for age
+						public int getAge() {
+							return age;
+						}
+						
+						public void setAge(int age) {
+							this.age=age;
+						}
+						
+						//getter and setter for department
+						public String getDepartment() {
+							return department;
+						}
+						
+						public void setDepartment(String department) {
+							this.department=department;
+						}
+						
+						public static void main(String[] args) {
+							Student kk = new Student("Archana",23,"MCA");
+							System.out.println("Name: "+kk.getName()+"\nAge: "+kk.getAge()+"\nDepartment: "+kk.getDepartment());
+					
+
+			}
+
+		}
+
+
+Output:
+Name:Archana
+Age:23
+Department:MCA	
+
+
