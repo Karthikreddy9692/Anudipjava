@@ -1,0 +1,79 @@
+1).
+package vamshi;
+
+import java.util.Scanner;
+
+public class Person {
+   String firstname;
+   String lastname ;
+   int age;
+    public Person() {
+	    firstname="karthik";
+	    lastname="reddy";
+	    age=23;
+   }
+    public void fullname()
+    {
+    	System.out.println(firstname+""+lastname);
+    }   
+  
+
+	public static void main(String[] args) {
+		  Person kk=new Person();
+		  kk.fullname();
+		
+		 	}
+
+}
+
+
+OUTPUT:
+karthikreddy
+
+
+2).
+package vamshi;
+
+public class Parameter {
+
+	
+	String title;
+	 String author;
+	 double price;
+	 public Parameter()
+	 {
+		 title="Untitled";
+		 author="Unknown";
+		 price=0.0;
+	 }
+	 public Parameter(String title,String author,double price)
+	 {
+		 this.title=title;
+		 this.author=author;
+		 this.price=price;
+	 }
+	 public void display() 
+	 {
+		 System.out.println("title : "+title);
+		 System.out.println("author : "+author);
+		 System.out.println("price : "+price);
+	 }
+	public static void main(String[] args) {
+		Parameter kk1=new Parameter();
+		
+		 kk1.display();
+	Parameter kk2=new Parameter("ramayana","valmiki",900.0);
+			kk2.display();
+
+	}
+
+}
+
+
+OUTPUT:
+title : Untitled
+author : Unknown
+price : 0.0
+title : ramayana
+author : valmiki
+price : 900.0

@@ -1,0 +1,93 @@
+1)
+
+package vamshi;
+
+1).
+import java.util.Scanner;
+
+public class Primenumber {
+
+	public static void main(String[] args) {
+		Scanner kk = new Scanner(System.in);
+
+        int frst = 2;
+        int lst = kk.nextInt();
+
+        for (int i = frst; i <= lst; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+
+    }
+
+    private static boolean isPrime(int num) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+	}
+
+OUTPUT:
+input:23
+O\P:
+2 3 5 7 11 13 17 19 23
+
+-------------------------------------------------------------------------------
+
+2)
+
+package vamshi;
+
+import java.util.Scanner;
+
+public class Strongnumber {
+	public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
+    public static boolean isStrongNumber(int num) {
+        int sum = 0;
+        int originalNum = num;
+
+        while (num > 0) {
+            int digit = num % 10;
+            sum += factorial(digit);
+            num /= 10;
+        }
+
+        return sum == originalNum;
+    }
+
+
+	public static void main(String[] args) {
+		Scanner kk = new Scanner(System.in);
+
+        int number = kk.nextInt();
+
+        if (isStrongNumber(number)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+       
+	}
+
+}
+
+
+OUTPUT:
+input:40858
+O/P:
+Yes
