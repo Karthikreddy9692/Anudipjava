@@ -1,0 +1,58 @@
+1)
+package vamshi;
+
+import java.util.Scanner;
+
+public class Vowels {
+
+	public static void main(String[] args) {
+	Scanner kk=new Scanner(System.in);
+	char r=kk.next().charAt(0);
+	if (r=='a'||r=='e'||r=='i'||r=='o'||r=='u'||r=='A'||r=='E'||r=='I'||r=='O'||r=='U') {
+		System.out.println("Vowel");
+	
+	}
+	else {
+		System.out.println("consonent");
+	}
+	}
+
+}
+OUTPUT:
+input:e
+O/P: Vowel
+
+
+2)
+
+import java.util.Scanner;
+
+public class Trendynumber {
+
+	public static void main(String[] args) {
+	Scanner rr=new Scanner(System.in);
+	int a=rr.nextInt();
+	if(a>=100 && a<=999) {
+		int ss =a/10;
+		ss=ss%10;
+		if (ss%3==0) {
+			System.out.println("Trendy Number");
+		
+		}
+		else {
+			System.out.println("Not a Trendy number");
+		}
+		
+	}
+	else {
+		System.out.println("Not a valid number");
+	}
+	
+		
+
+	}
+
+}
+OUTPUT:
+input:999
+O/p:Trendy Number
