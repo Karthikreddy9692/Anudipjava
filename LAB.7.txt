@@ -1,0 +1,63 @@
+
+Inheritance:
+// Base class
+class Shape {
+     public double getArea() {
+         return 0; // Default implementation
+     }
+ }
+// Subclass for Circle
+ class Circle extends Shape {
+     private int radius;
+     public Circle(int radius) {
+         this.radius = radius;
+     }
+@Override
+     public double getArea() {
+         return Math.PI * radius * radius;
+     }
+ }
+// Subclass for Square
+ class Square extends Shape {
+     private int length;
+     public Square(int length) {
+         this.length = length;
+     }
+@Override
+     public double getArea() {
+         return length * length;
+     }
+ }
+// Subclass for Rectangle
+ class Rectangle extends Shape {
+     private int width;
+     private int height;
+     public Rectangle(int width, int height) {
+         this.width = width;
+         this.height = height;
+     }
+@Override
+     public double getArea() {
+         return width * height;
+     }
+ }
+ public class College{
+     public static void main(String[] args) {
+// Instantiate Circle with radius 5
+         Shape circle = new Circle(5);
+     // Instantiate Square with length 4
+         Shape square = new Square(4);
+        // Instantiate Rectangle with width 3 and height 7
+         Shape rectangle = new Rectangle(3, 6);
+
+         System.out.println("Area of Circle : " + circle.getArea());
+         System.out.println("Area of Square : " + square.getArea());
+         System.out.println("Area of Rectangle: " + rectangle.getArea());
+     }
+ }
+
+
+OUTPUT:
+Area of Circle : 78.53981633974483
+Area of Square : 16.0
+Area of Rectangle: 18.0
